@@ -4,18 +4,20 @@ public class RMIRefIntegrityCheckTest {
     @Test
     public void checkIntegrityTestReturnsTrue(){
         RMIRefIntegrityCheck rmiRefIntegrityCheck = new RMIRefIntegrityCheck();
-        Integer a = 10;
-        Integer b = a;
-        assert(rmiRefIntegrityCheck.checkObject(a,b)==true);
+
+        Client c = new Client(10);
+        Client c2 = c;
+
+        assert(rmiRefIntegrityCheck.checkObject(c,c2)==true);
 
     }
 
     @Test
     public void checkIntegrityTestReturnsFalse(){
         RMIRefIntegrityCheck rmiRefIntegrityCheck = new RMIRefIntegrityCheck();
-        Integer a = 10;
-        Integer b = 20;
-        assert(rmiRefIntegrityCheck.checkObject(a,b)==false);
+        Client c = new Client(10);
+        Client c2 = new Client(20);
+        assert(rmiRefIntegrityCheck.checkObject(c,c2)==false);
 
     }
 }
