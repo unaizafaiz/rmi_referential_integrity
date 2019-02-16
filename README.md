@@ -1,4 +1,4 @@
-## CS 474 HomeWork3
+## CS 441 Homework 3
 ### By Unaiza Faiz(651052450)
 
 This assignment checks if the RMI Framework holds the referential integrity property. 
