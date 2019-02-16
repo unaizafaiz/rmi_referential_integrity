@@ -3,7 +3,7 @@
 
 This assignment checks if the RMI Framework holds the referential integrity property. 
 
-Steps to run the Program:
+#### Steps to run the Program:
 
 	- Clone the project 
 	- Open 2 terminals and navigate to the project folder 
